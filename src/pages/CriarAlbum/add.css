@@ -1,0 +1,238 @@
+
+
+.content_add{
+    max-width: 850px;
+    background-color: rgba(250,250,250,0.8);
+    margin: 0 auto;
+    min-height: 70vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.content_add form > h3{
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(44, 42, 42);
+}
+
+
+
+
+ .modal_addfaixa{
+    max-width: 500px;
+    width: 100%;
+    display: none;/*flex*/
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(134, 126, 126);
+    z-index: 99;
+    
+
+}
+
+ .modal_addfaixa > button{
+    max-width: 9%;
+    font-size: 25px;
+    font-weight: bold;
+    border:0;
+    background-color: white;
+    border-radius: 10px;
+    background-color: rgb(112, 112, 112);
+    color:white;
+    transition: .5s all;
+    
+    cursor: pointer;
+
+}
+
+.modal_addfaixa > button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+
+ .modal_addfaixa > h3{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.modal_addfaixa form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_addfaixa form input[type="text"], .modal_addfaixa form input[type="number"]{
+    width: 90%;
+    margin: 5px auto;
+    border-radius: 20px;
+    border:0;
+    height: 30px;
+    padding: 0 15px;
+
+}
+
+.modal_addfaixa form input[type="text"]:focus, .modal_addfaixa form input[type="number"]:focus{
+  outline: 0;
+  box-shadow: 2px 2px 0 rgb(177, 166, 166);
+}
+
+.modal_addfaixa form input[type="submit"]{
+    width: 70%;
+    margin: 5px auto;
+    border-radius: 20px;
+    border:0;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: rgb(30, 106, 173);
+    color: white;
+
+}
+
+
+.albuns h4{
+    margin-left: -20px;margin-right: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.678);;
+    font-size: 14px;
+}
+
+.albuns h5{
+    margin-right: 5px;
+}
+
+
+.add_faixa{
+    padding: 3px;
+    border-radius: 50%;
+    margin-right: 7px;
+    display: flex;
+    background-color: rgb(30, 106, 173);
+    color: white;
+    border:0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.number_faixa h4{
+    margin-left: -20px;margin-right: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.678);;
+    font-size: 14px;
+}
+
+
+
+
+
+/* **** modal album ***** */
+
+
+ .modal_addalbum{
+    max-width: 500px;
+    width: 100%;
+    display: none;/*flex*/
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(134, 126, 126);
+    z-index: 99;
+    
+
+}
+
+ .modal_addalbum > button{
+    max-width: 9%;
+    font-size: 25px;
+    font-weight: bold;
+    border:0;
+    background-color: white;
+    border-radius: 10px;
+    background-color: rgb(112, 112, 112);
+    color:white;
+    transition: .5s all;
+    
+    cursor: pointer;
+
+}
+
+ .modal_addalbum > button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+
+ .modal_addalbum > h3{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+
+.modal_addalbum form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_addalbum form input[type="text"], .modal_addalbum form input[type="number"]{
+    width: 90%;
+    margin: 5px auto;
+    border-radius: 20px;
+    border:0;
+    height: 30px;
+    padding: 0 15px;
+
+}
+
+.modal_addalbum form input[type="text"]:focus, .modal_addalbum form input[type="number"]:focus{
+  outline: 0;
+  box-shadow: 2px 2px 0 rgb(177, 166, 166);
+}
+
+.modal_addalbum form input[type="submit"]{
+    width: 70%;
+    margin: 5px auto;
+    border-radius: 20px;
+    border:0;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: rgb(30, 106, 173);
+    color: white;
+
+}
+
+
+@media screen and (max-width: 920px ) {
+    .modal_addalbum, .modal_addfaixa{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .modal_addalbum, .modal_addfaixa{
+        left: 10%;
+        top: 15%;
+        width: 80%;
+    }
+}

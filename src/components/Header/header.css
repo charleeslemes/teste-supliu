@@ -1,0 +1,33 @@
+
+
+header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 850px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 20px 10px 5px rgb(172, 162, 162);
+    padding: 15px;
+    
+    
+}
+
+
+ h1{
+    font-weight: normal;
+    color: rgb(70, 65, 65);
+}
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .discografia{
+        margin-top: 15px;
+    }
+}
